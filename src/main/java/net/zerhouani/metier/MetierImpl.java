@@ -7,11 +7,10 @@ import org.springframework.stereotype.Component;
 
 @Component("metier")
 public class MetierImpl implements IMetier {
-    @Autowired
+    //@Autowired
     @Qualifier("d2")
     private IDao dao; // Couplage faible
 
-    // Constructor-based dependency injection
     /**
      * Pour injecter dans l'attribut dao
      * un objet d'une classe qui implémente l'interface IDAO
@@ -21,8 +20,7 @@ public class MetierImpl implements IMetier {
         this.dao = dao;
     }
 
-    public MetierImpl() {
-    }
+    //public MetierImpl() {}
 
     @Override
     public double calcul() {
