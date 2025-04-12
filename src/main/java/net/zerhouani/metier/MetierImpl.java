@@ -1,9 +1,15 @@
 package net.zerhouani.metier;
 
 import net.zerhouani.dao.IDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
+@Component("metier")
 public class MetierImpl implements IMetier {
-    private IDao dao; // Dependency
+    @Autowired
+    @Qualifier("d2")
+    private IDao dao; // Couplage faible
 
     // Constructor-based dependency injection
     /**
@@ -11,7 +17,7 @@ public class MetierImpl implements IMetier {
      * un objet d'une classe qui implémente l'interface IDAO
      * au moment del'instanciation
      **/
-    public MetierImpl(IDao dao) {
+    public MetierImpl(@Qualifier("d2") IDao dao) {
         this.dao = dao;
     }
 
