@@ -6,6 +6,7 @@ public class DaoImpl2 implements IDao {
     @Override
     public double getData() {
         System.out.println("Version Web service");
-        return 41;
+        double t = 12;
+        return t;
     }
 }
