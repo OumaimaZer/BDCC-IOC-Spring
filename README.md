@@ -1,4 +1,4 @@
-### Mise en œuvre de l'injection des dépendances
+# Mise en œuvre de l'injection des dépendances
 Dans cette vidéo pédagogique "https://www.youtube.com/watch?v=vOLqabN-n2k", le Professeur Mohamed Youssfi introduit les concepts fondamentaux de l'injection des dépendances (IoC - Inversion of Control) en Java, en s'inspirant du framework Spring.​ Le but de ce TP est de réaliser une application fermée à la modification et ouverte à l'extension.
 
 ## Objectifs de la vidéo
